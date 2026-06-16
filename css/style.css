@@ -1,0 +1,190 @@
+/* Thiết lập chung lại toàn trang */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Tạo hiệu ứng cuộn mượt mà khi bấm menu liên kết */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 40px 0;
+}
+
+/* 1. CSS cho phân vùng Header */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* Layout chung cho các Section */
+.page-section {
+  padding: 40px 0 10px 0;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+/* 2. CSS cho phân vùng Gallery */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.02);
+}
+
+.img-caption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* 3. CSS cho phân vùng Danh Sách Lồng Nhau */
+.learning-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.main-list > li {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+  color: #2980b9;
+}
+
+.main-list ul {
+  list-style-type: circle;
+  margin-left: 25px;
+  margin-top: 8px;
+}
+
+.main-list ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* 4. CSS cho phân vùng Bảng dữ liệu */
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Gộp viền đơn đẹp mắt */
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+caption {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: left;
+  color: #2c3e50;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #fcfcfc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #95a5a6;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  background-color: #2c3e50;
+}
