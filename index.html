@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-project 4: Gallery & Learning Table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">EduSpace</div>
+      <nav>
+        <ul>
+          <li><a href="#gallery">Bộ Sưu Tập</a></li>
+          <li><a href="#learning">Nội Dung Học</a></li>
+          <li><a href="#schedule">Lịch Học Tập</a></li>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">Tài Liệu MDN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section id="gallery" class="page-section">
+      <h2>🖼️ Bộ Sưu Tập Không Gian Học Tập</h2>
+      <p class="section-desc">Hình ảnh minh họa các cột mốc và động lực học tập mỗi ngày.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Góc làm việc máy tính tối giản" width="500">
+          <p class="img-caption">Góc lập trình Front-End lý tưởng</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600" alt="Sổ tay ghi chép lộ trình và bút" width="500">
+          <p class="img-caption">Lên kế hoạch mục tiêu chi tiết</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="learning" class="page-section">
+      <h2>📚 Danh Sách Nội Dung Khóa Học</h2>
+      <p class="section-desc">Chi tiết các kiến thức trọng tâm cần nắm vững trong hành trình học Web.</p>
+      
+      <div class="learning-content">
+        <ol class="main-list">
+          <li><strong>Xây dựng cấu trúc (HTML5)</strong>
+            <ul>
+              <li>Thẻ văn bản cơ bản và liên kết (`<a>`, `href`)</li>
+              <li>Thẻ đa phương tiện (`<img>`, `alt`, `width/height`)</li>
+              <li>Danh sách (`<ul>`, `<ol>`, `<li>`) và Bảng (`<table>`)</li>
+            </ul>
+          </li>
+          <li><strong>Định dạng giao diện (CSS3)</strong>
+            <ul>
+              <li>Bộ chọn (Selectors) và Thuộc tính màu sắc, font chữ</li>
+              <li>Mô hình hộp (Box Model) & Căn lề padding/margin</li>
+              <li>Hệ thống bố cục nâng cao (Flexbox Grid)</li>
+            </ul>
+          </li>
+          <li><strong>Tạo tương tác chuyển động (JavaScript)</strong>
+            <ul>
+              <li>Biến, kiểu dữ liệu và cấu trúc điều kiện</li>
+              <li>Tương tác và bắt sự kiện trên trình duyệt (DOM Event)</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="schedule" class="page-section">
+      <h2>📅 Bảng Lịch Học & Kế Hoạch Tuần</h2>
+      <p class="section-desc">Lịch học chi tiết được phân bổ tối ưu để đạt kết quả tốt nhất.</p>
+      
+      <div class="table-responsive">
+        <table>
+          <caption>Lịch Học Tập Công Nghệ Web Cố Định</caption>
+          <thead>
+            <tr>
+              <th>Buổi Học</th>
+              <th>Thời Gian</th>
+              <th>Nội Dung Chi Tiết</th>
+              <th>Hình Thức</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Thứ 2</strong></td>
+              <td>19:30 - 21:30</td>
+              <td>Học lý thuyết HTML/CSS mới và vẽ sơ đồ UI</td>
+              <td>Trực tuyến (Zoom)</td>
+            </tr>
+            <tr>
+              <td><strong>Thứ 4</strong></td>
+              <td>19:30 - 21:30</td>
+              <td>Thực hành viết Code CodeCamp cá nhân</td>
+              <td>Tự học tại nhà</td>
+            </tr>
+            <tr>
+              <td><strong>Thứ 7</strong></td>
+              <td>09:00 - 11:30</td>
+              <td>Review sửa bài Mini-project, tối ưu mã nguồn</td>
+              <td>Offline/Mentor hỗ trợ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Dự Án Học Tập Cá Nhân Mini-Project 4. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
